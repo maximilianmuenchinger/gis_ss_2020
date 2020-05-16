@@ -1,0 +1,159 @@
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+
+   
+}
+ nav {
+     position: fixed;
+     top: 0px;
+     left: 65%;
+     background-color: black;
+     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 1;
+     
+    }
+    #Contact{
+        color: red;
+    }
+    #insta:hover{
+        
+        background-color: grey;
+        
+        width: 50px;
+        display: block;
+margin-left: auto;
+margin-right: auto
+
+        
+    }
+#insta img{
+    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    
+
+
+    
+    
+    
+}
+
+    
+
+
+    
+.hochkannt1 {
+
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-100%);
+    
+    
+    }
+
+
+    #hochkannt2{
+width: 400px;
+display: block;
+margin-left: auto;
+margin-right: auto }
+    
+
+    #video{
+        
+       width: 800px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
+        
+    }
+
+ h1{
+     padding-top: 550px;
+   font-size: 75px;
+  text-align: center;
+  color:beige;
+  
+ }
+ h2{
+     font-size: 35px;
+    text-align: center;
+    color:rgba(219, 124, 87, 0.61);
+   
+    
+ }
+
+ body{
+     font-family: sans-serif;
+    
+     background-image: url(hintergrund.png);
+ }
+
+
+nav a:hover { background-color: gray}
+
+ 
+    .kreis{
+    margin-top: -550px;
+    width: 800px;
+    height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: rgba(219, 124, 87, 0.61);
+}
+    .kreis p{
+        font-size: 35px;
+        text-align: center;
+        color: beige;
+    }
+    #instalink{
+        text-decoration: none;
+    }
+    #instalink:hover{
+        text-decoration: none;
+        background-color: grey;
+
+    }
+    .input{
+       
+        margin-left: 35%;
+        margin-bottom: 5px;
+        display: block;
+        background-color: grey;
+        
+        
+    }
+    #input{
+        margin-left: 35%;
+        margin-bottom: 5px;
+        display: block;
+        padding-right: 80px;
+        padding-bottom: 20px;
+        background-color: grey;
+    }
+    #input2{
+        margin-left: 35%;
+        margin-bottom: 5px;
+        display: block;
+        
+        background-color: grey;
+
+    }
+
+#datenschutz{
+    margin-left: 35%;
+    font-size: 10px;
+    color: grey;
+}
