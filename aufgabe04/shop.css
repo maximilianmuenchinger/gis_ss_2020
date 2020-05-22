@@ -1,0 +1,1421 @@
+
+
+main *{font-family: sans-serif;}
+body {
+background-color:rgb(235, 235, 235);
+}
+
+
+.Toilettenpapier > img {width: 200px;}
+
+
+    #logo{
+    position: relative;
+    
+    width: 100px;
+    left: 50%;
+ transform: translateX(-35%);
+ top: 150px;
+}
+#logo + div{
+    margin-top: -680px;
+    width: 95%;
+    height: 820px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    background-color: lightblue
+}
+#logo ~ div h1{
+    padding-top: 600px;
+    font-size: 60px;
+   text-align: center;
+   color:beige;
+}
+
+
+
+nav{
+position: fixed;
+top: -5px;
+left: 65%;
+background-color: black;
+padding: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+z-index: 1;
+border-radius: 7%;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    margin-top: 17px;
+   
+}
+ 
+    nav a:hover { background-color: gray}
+    nav img{
+        width: 50px;
+        margin-right: 5px;
+        margin-left: 15px;
+        margin-top: 1px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+        
+    }
+    
+
+    .nav{
+        
+        line-height: 70px;
+        text-align: right;
+
+    }
+
+
+
+
+    .menu{display: none ;
+    text-align: right;
+        margin: 0;
+    }
+    .menu a{
+        text-decoration: none;
+        color: gray;
+        margin: 0 10px;
+        line-height: 70px;
+        display: inline;
+        border-bottom: 1px solid gray;
+        z-index: 1;
+        background-color: black;
+        text-align: center;
+        
+    }
+    label{
+        font-size: 30px;
+        line-height: 70px;
+        display:none ;
+        
+        margin: 0 40px;
+    }
+    #toggle{
+        display:none ;
+    }
+   .br {display: none;}
+   .br1{display: none;}
+
+
+ .Toilettenpapier{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    
+    }
+    
+ 
+
+ h3{
+     position: relative;
+     top: 10px;
+ }  
+ .Toilettenpapier1{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    
+    }
+    
+ .Toilettenpapier1 img {width: 200px;}
+ .Toilettenpapier2{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+     }
+    
+ .Toilettenpapier2 img {width: 200px;}
+ .Toilettenpapier3{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    
+    }
+    
+ .Toilettenpapier3 img {width: 200px;}
+
+ 
+
+ .Reihe2{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe21 img {width: 200px;}
+ .Reihe21{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe2 img {width: 200px;}
+ .Reihe22{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe22 img {width: 200px;}
+ .Reihe23{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe23 img {width: 200px;}
+ 
+ .Reihe3{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe3 img {width: 200px;}
+ .Reihe31{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe31 img {width: 200px;}
+ .Reihe32{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe32 img {width: 200px;}
+ .Reihe33{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe33 img {width: 200px;}
+ .Reihe4{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe4 img {width: 200px;}
+ .Reihe41{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe41 img {width: 200px;}
+ .Reihe42{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe42 img {width: 200px;}
+ .Reihe43{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe43 img {width: 200px;}
+
+
+ .Reihe5{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe5 img {width: 200px;}
+ .Reihe51{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe51 img {width: 200px;}
+ .Reihe52{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe52 img {width: 200px;}
+ .Reihe53{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe53 img {width: 200px;}
+
+ .Reihe6{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe6 img {width: 200px;}
+ .Reihe61{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe61 img {width: 200px;}
+ .Reihe62{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe62 img {width: 200px;}
+ .Reihe63{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-200%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+ }
+ .Reihe63 img {width: 200px;}
+ 
+
+@media screen and (max-width: 1450px){
+    .oben{
+        margin-top: -680px;
+        width: 95%;
+        height: 820px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5%;
+        background-color: lightblue
+    }
+    .oben h1{
+        padding-top: 600px;
+        font-size: 45px;
+       text-align: center;
+       color:beige;
+    }
+    
+    
+        #logo{
+        position: relative;
+        
+        width: 100px;
+        left: 50%;
+     transform: translateX(-35%);
+     top: 200px;
+    }
+label{
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 0px;
+    z-index: 1;
+}
+.menu{display:none  ;
+    text-align: right;
+        margin-right: 10px;
+    position: fixed;
+    right: 40px;
+top: 50px;
+z-index: 1;
+}
+    
+    .menu a{
+        display: block; 
+        z-index: 1;
+        background-color: black;
+        text-align: center;
+    }
+        #toggle:checked + .menu {
+        display: block;
+    }
+    nav{background-color: transparent;}
+    nav a {
+        display: none;
+    }
+    nav img{
+        display: block;
+        width: 50px;
+        display: block;
+    position: fixed;
+    right: 15px;
+    top: 10px;}
+
+.br{display: block;}
+    .Toilettenpapier{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+        transform: translateX(-100%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;
+     }
+     .Toilettenpapier1{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+    top: 0px;
+        transform: translateX(-100%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+        
+        .Toilettenpapier2{
+            width: 350px;
+            height: 350px;
+        position: relative;
+        left: 50%;
+        top: 20px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+ }
+ .Toilettenpapier3{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 20px;
+    transform: translateX(-100%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;}
+ 
+
+ .Reihe2{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 20px;
+    transform: translateX(-100%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;}
+    .Reihe21{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+        transform: translateX(-100%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+    .Reihe22{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+        transform: translateX(-100%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+        .Reihe23{
+            width: 350px;
+            height: 350px;
+        position: relative;
+        left: 50%;
+        top: 40px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+
+        .Reihe3{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 60px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe31{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 60px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe32{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 80px;
+            
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe33{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe4{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 0px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe41{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 0px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+         .Reihe42{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe43{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+        
+            .Reihe5{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 40px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe51{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 40px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe52{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 60px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe53{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 60px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+        
+         .Reihe6{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe61{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe62{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 100px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe63{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 100px;
+            transform: translateX(-100%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+
+
+
+}
+
+@media screen and (max-width: 740px){
+.br1{display: block;}
+
+label{
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 0px;
+    z-index: 1;
+}
+.menu{display:none  ;
+    text-align: right;
+        margin-right: 10px;
+    position: fixed;
+    right: 40px;
+top: 50px;
+z-index: 1;
+}
+    
+    .menu a{
+        display: block; 
+        z-index: 1;
+        background-color: black;
+        text-align: center;
+    }
+        #toggle:checked + .menu {
+        display: block;
+    }
+    nav{background-color: transparent;}
+    nav a {
+        display: none;
+    }
+    nav img{
+        display: block;
+        width: 50px;
+        display: block;
+    position: fixed;
+    right: 15px;
+    top: 10px;}
+
+
+    .Toilettenpapier{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;
+     }
+     .Toilettenpapier1{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+        transform: translateX(-50%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+        
+        .Toilettenpapier2{
+            width: 350px;
+            height: 350px;
+        position: relative;
+        left: 50%;
+        top: 20px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+ }
+ .Toilettenpapier3{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 40px;
+    transform: translateX(-50%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;}
+ 
+
+ .Reihe2{
+    width: 350px;
+    height: 350px;
+position: relative;
+left: 50%;
+top: 40px;
+    transform: translateX(-50%);
+    display: inline-block;
+    background-color: white;
+    text-align: center;}
+    .Reihe21{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+    top: 60px;
+        transform: translateX(-50%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+    .Reihe22{
+        width: 350px;
+        height: 350px;
+    position: relative;
+    left: 50%;
+    top: 60px;
+        transform: translateX(-50%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+        .Reihe23{
+            width: 350px;
+            height: 350px;
+        position: relative;
+        left: 50%;
+        top: 80px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+
+        .Reihe3{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 100px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe31{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 120px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe32{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 120px;
+            
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe33{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 140px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe4{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 0px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe41{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+         .Reihe42{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe43{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 40px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+        
+            .Reihe5{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 60px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe51{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe52{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe53{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 100px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+        
+         .Reihe6{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 120px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe61{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 140px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe62{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 140px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Reihe63{
+            width: 350px;
+            height: 350px;
+            position: relative;
+            left: 50%;
+            top: 160px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+
+
+
+         .oben{
+            margin-top: -680px;
+            width: 95%;
+            height: 750px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5%;
+            background-color: lightblue
+        }
+        .oben h1{
+            padding-top: 600px;
+            font-size: 40px;
+           text-align: center;
+           color:beige;
+        }
+        
+         #logo{
+            position: relative;
+            
+            width: 80px;
+            left: 50%;
+         transform: translateX(-35%);
+         top: 200px;
+        }
+
+}
+
+@media screen and (max-width: 600px){
+    .br1{display: block;}
+    
+    label{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 40px;
+        top: 0px;
+        z-index: 1;
+    }
+    .menu{display:none  ;
+        text-align: right;
+            margin-right: 10px;
+        position: fixed;
+        right: 40px;
+    top: 50px;
+    z-index: 1;
+    
+    }
+        
+        .menu a{
+            display: block; 
+            z-index: 1;
+            background-color: black;
+            text-align: center;
+        }
+            #toggle:checked + .menu {
+            display: block;
+        }
+        nav{background-color: transparent;}
+        nav a {
+            display: none;
+        }
+        nav img{
+            display: block;
+            width: 35px;
+            display: block;
+        position: fixed;
+        right: 30px;
+        top: 15px;}
+    
+    
+        .Toilettenpapier{
+            width: 300px;
+            height: 300px;
+        position: relative;
+        left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+         }
+         .Toilettenpapier1{
+            width: 300px;
+            height: 300px;
+        position: relative;
+        left: 50%;
+        top: 20px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+            
+            .Toilettenpapier2{
+                width: 300px;
+                height: 300px;
+            position: relative;
+            left: 50%;
+            top: 20px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+     }
+     .Toilettenpapier3{
+        width: 300px;
+        height: 300px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+        transform: translateX(-50%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+     
+    
+     .Reihe2{
+        width: 300px;
+        height: 300px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+        transform: translateX(-50%);
+        display: inline-block;
+        background-color: white;
+        text-align: center;}
+        .Reihe21{
+            width: 300px;
+            height: 300px;
+        position: relative;
+        left: 50%;
+        top: 60px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+        .Reihe22{
+            width: 300px;
+            height: 300px;
+        position: relative;
+        left: 50%;
+        top: 60px;
+            transform: translateX(-50%);
+            display: inline-block;
+            background-color: white;
+            text-align: center;}
+            .Reihe23{
+                width: 300px;
+                height: 300px;
+            position: relative;
+            left: 50%;
+            top: 80px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;}
+    
+            .Reihe3{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 100px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe31{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 120px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe32{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 120px;
+                
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe33{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 140px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe4{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 0px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe41{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 20px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;}
+             .Reihe42{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 20px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe43{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 40px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;}
+            
+                .Reihe5{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 60px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe51{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 80px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe52{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 80px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe53{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 100px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+            
+             .Reihe6{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 120px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe61{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 140px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe62{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 140px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+             .Reihe63{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                top: 160px;
+                transform: translateX(-50%);
+                display: inline-block;
+                background-color: white;
+                text-align: center;
+             }
+    
+    
+    
+             .oben{
+                margin-top: -680px;
+                width: 90%;
+                height: 750px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 5%;
+                background-color: lightblue
+            }
+            #logo ~ div h1{
+                padding-top: 650px;
+                font-size: 30px;
+               text-align: center;
+               color:beige;
+            }
+            
+             #logo{
+                position: relative;
+                
+                width: 55px;
+                left: 50%;
+             transform: translateX(-35%);
+             top: 150px;
+            }
+        }
