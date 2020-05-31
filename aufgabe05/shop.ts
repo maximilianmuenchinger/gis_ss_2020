@@ -1,0 +1,152 @@
+ interface Coronaartikel {
+     img: string;
+     name: string;
+     beschreibung: string;
+     preis: string;
+ }
+
+ let toilettenpapier: Coronaartikel = {
+     img: "21.jpg",
+     name: "Toilettenpapier",
+     beschreibung: "man weiß ja nie",
+     preis: "50€"
+ };
+ let seife: Coronaartikel = {
+     img: "22.jpg",
+     name: "Seife",
+     beschreibung: "super wichtig",
+     preis: "5€"
+ };
+ let mehl: Coronaartikel = {
+     img: "23.jpg",
+     name: "Mehl",
+     beschreibung: "alle werden auf einmal Bäcker",
+     preis: "20€"
+ };
+ let desinfektionsmittel: Coronaartikel = {
+     img: "24.jpg",
+     name: "Desinfektionsmittel",
+     beschreibung: "schlagt euch drum",
+     preis: "100€"
+ };
+ let maske: Coronaartikel = {
+     img: "25.jpg",
+     name: "Maske",
+     beschreibung: "wichtig zum einkaufe",
+     preis: "5€"
+ };
+ let dosen: Coronaartikel = {
+     img: "26.jpg",
+     name: "Dosen",
+     beschreibung: "super lecker",
+     preis: "2€"
+ };
+ let coronaartikel: Coronaartikel[] = [toilettenpapier, seife, mehl, desinfektionsmittel, maske, dosen];
+
+
+ interface Schuhe {
+    img: string;
+    name: string;
+    beschreibung: string;
+    preis: string;
+}
+ let grauestiefel: Schuhe = {
+    img: "1.png",
+    name: "Graue Stiefe",
+    beschreibung: "sehr Grau",
+    preis: "50€"
+};
+ let nikes: Schuhe = {
+    img: "2.jpg",
+    name: "Neon gelbe Nikes",
+    beschreibung: "wilde Farbe",
+    preis: "200€"
+};
+ let nikes2: Schuhe = {
+     img: "3.jpg",
+     name: "Blau orangene Nikes",
+     beschreibung: "nicht ganz so wilde Farbe",
+     preis: "180€"
+ };
+ let converse: Schuhe = {
+     img: "4.jpg",
+     name: "Converse",
+     beschreibung: "Converse in verschiedenen Farben",
+     preis: "50€"
+ };
+ let rollschuhe: Schuhe = {
+     img: "5.jpg", 
+     name: "Rollschuhe",
+     beschreibung: "Krasse Rollschuhe",
+     preis: "20€"
+ };
+ let schnürstiefel: Schuhe = {
+     img: "6.jpg",
+     name: "Wilde Schnürstiefel",
+     beschreibung: "Hässliche Stiefel in Babyblau",
+     preis: "1000€"
+ };
+
+ let schuhe: Schuhe[] = [grauestiefel, nikes, nikes2, converse, rollschuhe, schnürstiefel];
+
+
+
+ for (let index: number = 0; index < coronaartikel.length; index++) {
+     
+    let DIV: HTMLDivElement = document.createElement("div");
+    DIV.id = "Div1" + index; 
+    document.getElementById("corona")?.appendChild(DIV);
+
+
+    let IMG: HTMLImageElement = document.createElement("img");
+    IMG.src = coronaartikel[index].img;
+    document.getElementById("Div1" + index)?.appendChild(IMG);
+
+    let H: HTMLElement = document.createElement("h3");
+    H.innerHTML = coronaartikel[index].name;
+    document.getElementById("Div1" + index)?.appendChild(H);
+
+    let P: HTMLElement = document.createElement("p");
+    P.innerHTML = coronaartikel[index].beschreibung;
+    document.getElementById("Div1" + index)?.appendChild(P);
+
+    let PREIS: HTMLElement = document.createElement("p");
+    PREIS.innerHTML = coronaartikel[index].preis;
+    document.getElementById("Div1" + index)?.appendChild(PREIS);
+
+    let kaufen: HTMLButtonElement = document.createElement("button");
+    kaufen.innerHTML = "Kaufen";
+    document.getElementById("Div1" + index)?.appendChild(kaufen);
+ }
+
+ for (let index: number = 0; index < schuhe.length; index++) {
+     
+    let DIV: HTMLDivElement = document.createElement("div");
+    DIV.id = "Div2" + index; 
+    document.getElementById("schuhe")?.appendChild(DIV);
+
+
+    let IMG: HTMLImageElement = document.createElement("img");
+    IMG.src = schuhe[index].img;
+    document.getElementById("Div2" + index)?.appendChild(IMG);
+
+    let H: HTMLElement = document.createElement("h3");
+    H.innerHTML = schuhe[index].name;
+    document.getElementById("Div2" + index)?.appendChild(H);
+
+    let P: HTMLElement = document.createElement("p");
+    P.innerHTML = schuhe[index].beschreibung;
+    document.getElementById("Div2" + index)?.appendChild(P);
+
+    let PREIS: HTMLElement = document.createElement("p");
+    PREIS.innerHTML = schuhe[index].preis;
+    document.getElementById("Div2" + index)?.appendChild(PREIS);
+
+    let kaufen: HTMLButtonElement = document.createElement("button");
+    kaufen.innerHTML = "Kaufen";
+    document.getElementById("Div2" + index)?.appendChild(kaufen);
+
+ }
+
+
+
