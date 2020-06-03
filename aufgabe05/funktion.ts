@@ -1,6 +1,4 @@
-createArtikel();
-    
-function createArtikel(): void {
+
 
 for (let index: number = 0; index < alleArtikel.length; index++) {
     
@@ -44,5 +42,4 @@ for (let index: number = 0; index < alleArtikel.length; index++) {
        default:
            break;
    }
-}
 }
