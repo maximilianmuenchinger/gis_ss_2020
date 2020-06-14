@@ -1,8 +1,8 @@
-let einkaufswagenPage: Artikel[] = [];
-if (localStorage.getItem("alleArtikel") != null) {
-    let artikelHinzugefügt: Artikel[] = JSON.parse(localStorage.getItem("alleArtikel")!);
-    einkaufswagenPage = artikelHinzugefügt;
-}
+//let einkaufswagenPage: Artikel[] = [];
+//if (localStorage.getItem("alleArtikel") != null) {
+    //let artikelHinzugefügt: Artikel[] = JSON.parse(localStorage.getItem("alleArtikel")!);
+    //einkaufswagenPage = artikelHinzugefügt;
+//}
 
 function artikelHinzufügen(): void {
     for (let index: number = 0; index < alleArtikel.length; index++) {

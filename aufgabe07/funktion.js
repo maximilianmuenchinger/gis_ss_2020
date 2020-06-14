@@ -1,9 +1,9 @@
 "use strict";
-let einkaufswagenPage = [];
-if (localStorage.getItem("alleArtikel") != null) {
-    let artikelHinzugefügt = JSON.parse(localStorage.getItem("alleArtikel"));
-    einkaufswagenPage = artikelHinzugefügt;
-}
+//let einkaufswagenPage: Artikel[] = [];
+//if (localStorage.getItem("alleArtikel") != null) {
+//let artikelHinzugefügt: Artikel[] = JSON.parse(localStorage.getItem("alleArtikel")!);
+//einkaufswagenPage = artikelHinzugefügt;
+//}
 function artikelHinzufügen() {
     for (let index = 0; index < alleArtikel.length; index++) {
         let divcontainer = document.createElement("div");
