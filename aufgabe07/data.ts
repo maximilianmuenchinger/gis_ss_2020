@@ -12,8 +12,8 @@ produkteLaden("data.json");
 
 async function produkteLaden(_url: RequestInfo): Promise<void> {
 let response: Response = await fetch(_url);
-let jasonArray: JSON = await response.json();
-alleArtikel = await JSON.parse(JSON.stringify(jasonArray));
+alleArtikel = await response.json();
+artikelHinzufügen();
 }
 
 
@@ -30,6 +30,7 @@ let beschreibung: Number;
 let case1: number;
 
 let schuhe1: HTMLElement;
+
 
 
 

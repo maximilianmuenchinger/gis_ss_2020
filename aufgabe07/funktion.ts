@@ -1,63 +1,70 @@
+let einkaufswagenPage: Artikel[] = [];
+if (localStorage.getItem("alleArtikel") != null) {
+    let artikelHinzugefügt: Artikel[] = JSON.parse(localStorage.getItem("alleArtikel")!);
+    einkaufswagenPage = artikelHinzugefügt;
+}
+
+function artikelHinzufügen(): void {
+    for (let index: number = 0; index < alleArtikel.length; index++) {
+
+        let divcontainer: HTMLElement = document.createElement("div");
 
 
-for (let index: number = 0; index < alleArtikel.length; index++) {
+        let img1: HTMLImageElement = document.createElement("img");
+        img1.setAttribute("src", alleArtikel[index].img);
+        img1.setAttribute("alt", "Bild");
+        divcontainer.appendChild(img1);
 
-    let divcontainer: HTMLElement = document.createElement("div");
+        let name1: HTMLElement = document.createElement("h3");
+        name1.innerHTML = alleArtikel[index].name;
+        divcontainer.appendChild(name1);
 
+        let beschreibung1: HTMLElement = document.createElement("p");
+        beschreibung1.innerHTML = alleArtikel[index].beschreibung;
+        divcontainer.appendChild(beschreibung1);
 
-    let img1: HTMLImageElement = document.createElement("img");
-    img1.setAttribute("src", alleArtikel[index].img);
-    img1.setAttribute("alt", "Bild");
-    divcontainer.appendChild(img1);
-
-    let name1: HTMLElement = document.createElement("h3");
-    name1.innerHTML = alleArtikel[index].name;
-    divcontainer.appendChild(name1);
-
-    let beschreibung1: HTMLElement = document.createElement("p");
-    beschreibung1.innerHTML = alleArtikel[index].beschreibung;
-    divcontainer.appendChild(beschreibung1);
-
-    let preis1: HTMLElement = document.createElement("p");
-    let preisNumber: HTMLElement = document.createElement("number");
-    divcontainer.appendChild(preis1);
-    preis1.appendChild(preisNumber);
-    preisNumber.innerHTML = alleArtikel[index].preis + "€";
+        let preis1: HTMLElement = document.createElement("p");
+        let preisNumber: HTMLElement = document.createElement("number");
+        divcontainer.appendChild(preis1);
+        preis1.appendChild(preisNumber);
+        preisNumber.innerHTML = alleArtikel[index].preis + "€";
 
 
-    let kaufen: HTMLButtonElement = document.createElement("button");
-    kaufen.innerText = "Kaufen";
-    kaufen.addEventListener("click", addToEinkaufswagen);
-    kaufen.setAttribute("type", "button");
-    kaufen.setAttribute("artikelPreis", alleArtikel[index].preis.toString());
+        let kaufen: HTMLButtonElement = document.createElement("button");
+        kaufen.innerText = "Kaufen";
+        kaufen.addEventListener("click", addToEinkaufswagen);
+        kaufen.setAttribute("type", "button");
+        kaufen.setAttribute("artikelPreis", alleArtikel[index].preis.toString());
+        kaufen.setAttribute("welcherArtikel", [index].toString());
+        kaufen.addEventListener("click", rechner);
+        kaufen.addEventListener("click", einkaufswagenHinzufügen);
 
-    kaufen.addEventListener("click", rechner);
-    
-    divcontainer.appendChild(kaufen);
+        divcontainer.appendChild(kaufen);
 
 
 
 
 
-    //Kategorien werden den Ids zugewiesen
-    switch (alleArtikel[index].kategorie) {
-        case 1:
-            let corona1: HTMLElement = document.getElementById("corona")!;
-            corona1.appendChild(divcontainer);
-            break;
-        case 2:
-            schuhe1 = document.getElementById("schuhe")!;
-            schuhe1.appendChild(divcontainer);
-            break;
-        default:
-            break;
+        //Kategorien werden den Ids zugewiesen
+        switch (alleArtikel[index].kategorie) {
+            case 1:
+                let corona1: HTMLElement = document.getElementById("corona")!;
+                corona1.appendChild(divcontainer);
+                break;
+            case 2:
+                schuhe1 = document.getElementById("schuhe")!;
+                schuhe1.appendChild(divcontainer);
+                break;
+            default:
+                break;
+        }
+
+
+        // preis = alleArtikel[index].preis;
+        // anfang = anfang + preis;
+        // ganzeAusgabe = preis; 
+
     }
-
-
-    // preis = alleArtikel[index].preis;
-    // anfang = anfang + preis;
-    // ganzeAusgabe = preis; 
-
 }
 
 //einkaufswagen zähler
@@ -77,7 +84,11 @@ function rechner(_event: Event): void {
     target = (<HTMLElement>_event.target);
     price = parseFloat(target.getAttribute("artikelPreis")!);
     ausgabe = ausgabe + price;
-    console.log("Total:" + ausgabe + "€");
+    let preis1: HTMLElement = document.createElement("p");
+    let preisNumber: HTMLElement = document.createElement("number");
+    preis1.appendChild(preisNumber);
+    preisNumber.innerHTML = "gesamter Preis:" + ausgabe + "€";
+    document.getElementById("preis");
 }
 
 
@@ -125,10 +136,41 @@ function navAusblenden(_event: Event): void {
 
 
     }
-
-
-
-
-
-
 }
+
+
+function einkaufswagenHinzufügen(_event: Event): void {
+
+    target = (<HTMLElement>_event.target);
+    let welcheZahl: number = parseFloat(target.getAttribute("welcherArtikel")!);
+
+    let divcontainer: HTMLElement = document.createElement("div");
+    document.getElementById("warenkorb");
+
+    let img1: HTMLImageElement = document.createElement("img");
+    img1.setAttribute("src", alleArtikel[welcheZahl].img);
+    img1.setAttribute("alt", "Bild");
+    divcontainer.appendChild(img1);
+
+    let name1: HTMLElement = document.createElement("h3");
+    name1.innerHTML = alleArtikel[welcheZahl].name;
+    divcontainer.appendChild(name1);
+
+    let beschreibung1: HTMLElement = document.createElement("p");
+    beschreibung1.innerHTML = alleArtikel[welcheZahl].beschreibung;
+    divcontainer.appendChild(beschreibung1);
+
+    let preis1: HTMLElement = document.createElement("p");
+    let preisNumber: HTMLElement = document.createElement("number");
+    divcontainer.appendChild(preis1);
+    preis1.appendChild(preisNumber);
+    preisNumber.innerHTML = alleArtikel[welcheZahl].preis + "€";
+
+
+    let kaufen: HTMLButtonElement = document.createElement("button");
+    kaufen.innerText = "entfernen";
+    kaufen.addEventListener("click", addToEinkaufswagen);
+    kaufen.setAttribute("type", "button");
+}
+
+

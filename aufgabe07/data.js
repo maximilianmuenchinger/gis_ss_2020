@@ -3,8 +3,8 @@ let alleArtikel;
 produkteLaden("data.json");
 async function produkteLaden(_url) {
     let response = await fetch(_url);
-    let jasonArray = await response.json();
-    alleArtikel = await JSON.parse(JSON.stringify(jasonArray));
+    alleArtikel = await response.json();
+    artikelHinzufügen();
 }
 let preis;
 let anfang;
