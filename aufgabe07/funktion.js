@@ -107,7 +107,7 @@ function einkaufswagenHinzufügen(_event) {
     target = _event.target;
     let welcheZahl = parseFloat(target.getAttribute("welcherArtikel"));
     let divcontainer = document.createElement("div");
-    document.getElementById("warenkorb");
+    divcontainer = document.getElementById("warenkorb");
     let img1 = document.createElement("img");
     img1.setAttribute("src", alleArtikel[welcheZahl].img);
     img1.setAttribute("alt", "Bild");
