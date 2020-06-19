@@ -2,18 +2,16 @@
 let button1 = document.createElement("button");
 button1.innerText = "abschicken";
 button1.setAttribute("type", "button");
-button1.addEventListener("click", zuSubmitWeiter);
+button1.addEventListener("click", submitVerarbeiten);
 document.getElementById("button")?.appendChild(button1);
-function zuSubmitWeiter() {
-    submitVerarbeiten("https://gismaximilianmuenchinger.herokuapp.com/");
-}
-async function submitVerarbeiten(_url) {
+async function submitVerarbeiten() {
     let formData = new FormData(document.forms[0]);
-    let url = "" + _url;
+    let url = "https://gismaximilianmuenchinger.herokuapp.com/";
     let query = new URLSearchParams(formData);
     url += "?" + query.toString();
-    let response = await fetch(_url, { method: "get" });
+    let response = await fetch(url, { method: "get" });
     let answer = await response.text();
+    answer = answer.replace("https://gismaximilianmuenchinger.herokuapp.com/", "");
     console.log(answer);
 }
 //# sourceMappingURL=aufgabe08.js.map
