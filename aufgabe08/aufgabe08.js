@@ -1,9 +1,9 @@
 "use strict";
-let button = document.createElement("button");
-document.getElementById("submit");
-button.innerText = "submit";
-button.setAttribute("type", "button");
-button.addEventListener("click", submitVerarbeiten);
+let button1 = document.createElement("button");
+button1.innerText = "abschicken";
+button1.setAttribute("type", "button");
+button1.addEventListener("click", submitVerarbeiten);
+document.getElementById("button")?.appendChild(button1);
 async function submitVerarbeiten() {
     let formData = new FormData(document.forms[0]);
     let url = "https://gismaximilianmuenchinger.herokuapp.com/";

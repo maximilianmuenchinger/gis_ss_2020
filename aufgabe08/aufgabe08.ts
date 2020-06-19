@@ -1,11 +1,14 @@
 
+let button1: HTMLButtonElement = document.createElement("button");
+button1.innerText = "abschicken";
+button1.setAttribute("type", "button");
+button1.addEventListener("click", submitVerarbeiten);
+document.getElementById("button")?.appendChild(button1);
 
-let button: HTMLButtonElement = document.createElement("button");
-document.getElementById("submit");
-button.innerText = "submit";
 
-button.setAttribute("type", "button");
-button.addEventListener("click", submitVerarbeiten);
+
+
+
 
 async function submitVerarbeiten(): Promise<void> {
     let formData: FormData = new FormData(document.forms[0]);
@@ -13,8 +16,9 @@ async function submitVerarbeiten(): Promise<void> {
     let query: URLSearchParams = new URLSearchParams(<any>formData);
     url += "?" + query.toString();
 
-    let response: Response = await fetch(url, {method: "get"});
+    let response: Response = await fetch(url, { method: "get" });
     let answer: string = await response.url;
 
     console.log(answer);
+    
 }
