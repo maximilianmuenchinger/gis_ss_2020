@@ -1,6 +1,10 @@
 
 
-let button: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("submit"));
+let button: HTMLButtonElement = document.createElement("button");
+document.getElementById("submit");
+button.innerText = "submit";
+
+button.setAttribute("type", "button");
 button.addEventListener("click", submitVerarbeiten);
 
 async function submitVerarbeiten(): Promise<void> {
@@ -9,7 +13,7 @@ async function submitVerarbeiten(): Promise<void> {
     let query: URLSearchParams = new URLSearchParams(<any>formData);
     url += "?" + query.toString();
 
-    let response: Response = await fetch (url);
+    let response: Response = await fetch(url, {method: "get"});
     let answer: string = await response.url;
 
     console.log(answer);
