@@ -14,7 +14,10 @@ background-color:rgb(235, 235, 235);
     text-align: center;
    
 }
-
+#preis1 p{
+    color: black;
+    font-size: 100px;
+}
 
 button{
     cursor: pointer;
@@ -172,6 +175,21 @@ nav > a{
     #schuhe img{
         width: 200px;
     }
+
+    #warenkorb div{ width: 300px;
+        height: 400px;
+        margin-bottom: 200px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        
+        }
+        #warenkorb{display: flex;
+            flex-wrap: wrap;}
+        #warenkorb img{
+            width: 200px; 
+        }
 
     @media screen and (max-width: 1024px){
 

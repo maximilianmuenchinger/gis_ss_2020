@@ -8,13 +8,21 @@ interface Artikel {
 
 let alleArtikel: Artikel[];
 produkteLaden("data.json");
+produkteLaden2("data.json");
 
 
 async function produkteLaden(_url: RequestInfo): Promise<void> {
-let response: Response = await fetch(_url);
-alleArtikel = await response.json();
-artikelHinzufügen();
+    let response: Response = await fetch(_url);
+    alleArtikel = await response.json();
+    artikelHinzufügen();
 }
+
+async function produkteLaden2(_url: RequestInfo): Promise<void> {
+    let response: Response = await fetch(_url);
+    alleArtikel = await response.json();
+    artikelHinzufügen2();
+}
+
 
 
 
@@ -35,4 +43,9 @@ let schuhe1: HTMLElement;
 
 
 
-
+//einkaufswagenHinzufügen
+let welcheZahl: number;
+let array: string;
+let vorherZahl: string = "";
+let welcheZahlString: string;
+let welcheZahlStringNumber: number;

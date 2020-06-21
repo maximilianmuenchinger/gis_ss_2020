@@ -1,9 +1,4 @@
 "use strict";
-//let einkaufswagenPage: Artikel[] = [];
-//if (localStorage.getItem("alleArtikel") != null) {
-//let artikelHinzugefügt: Artikel[] = JSON.parse(localStorage.getItem("alleArtikel")!);
-//einkaufswagenPage = artikelHinzugefügt;
-//}
 function artikelHinzufügen() {
     for (let index = 0; index < alleArtikel.length; index++) {
         let divcontainer = document.createElement("div");
@@ -62,11 +57,8 @@ function rechner(_event) {
     target = _event.target;
     price = parseFloat(target.getAttribute("artikelPreis"));
     ausgabe = ausgabe + price;
-    let preis1 = document.createElement("p");
-    let preisNumber = document.createElement("number");
-    preis1.appendChild(preisNumber);
-    preisNumber.innerHTML = "gesamter Preis:" + ausgabe + "€";
-    document.getElementById("preis");
+    let ausgabe2 = JSON.stringify(ausgabe);
+    localStorage.setItem("ausgabe2", ausgabe2);
 }
 // Kategorien unterscheidung / ausblenden
 let navDiv = document.createElement("div");
@@ -105,27 +97,15 @@ function navAusblenden(_event) {
 }
 function einkaufswagenHinzufügen(_event) {
     target = _event.target;
-    let welcheZahl = parseFloat(target.getAttribute("welcherArtikel"));
-    let divcontainer = document.createElement("div");
-    divcontainer = document.getElementById("warenkorb");
-    let img1 = document.createElement("img");
-    img1.setAttribute("src", alleArtikel[welcheZahl].img);
-    img1.setAttribute("alt", "Bild");
-    divcontainer.appendChild(img1);
-    let name1 = document.createElement("h3");
-    name1.innerHTML = alleArtikel[welcheZahl].name;
-    divcontainer.appendChild(name1);
-    let beschreibung1 = document.createElement("p");
-    beschreibung1.innerHTML = alleArtikel[welcheZahl].beschreibung;
-    divcontainer.appendChild(beschreibung1);
-    let preis1 = document.createElement("p");
-    let preisNumber = document.createElement("number");
-    divcontainer.appendChild(preis1);
-    preis1.appendChild(preisNumber);
-    preisNumber.innerHTML = alleArtikel[welcheZahl].preis + "€";
-    let kaufen = document.createElement("button");
-    kaufen.innerText = "entfernen";
-    kaufen.addEventListener("click", addToEinkaufswagen);
-    kaufen.setAttribute("type", "button");
+    welcheZahl = parseFloat(target.getAttribute("welcherArtikel"));
+    welcheZahlString = JSON.stringify(welcheZahl);
+    if (vorherZahl != "") {
+        vorherZahl = vorherZahl + "," + welcheZahlString;
+    }
+    else {
+        vorherZahl = welcheZahlString;
+    }
+    localStorage.setItem("vorherzahl", vorherZahl);
 }
+localStorage.setItem("preisStorage", ausgabe3);
 //# sourceMappingURL=funktion.js.map
