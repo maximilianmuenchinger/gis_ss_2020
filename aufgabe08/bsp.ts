@@ -1,28 +1,35 @@
 import * as Http from "http";
 
 export namespace A08Server {
-  console.log("Starting server");
+
+  console.log("Starting server"); // in Konsole wird "starting server" ausgegeben
   let port: number = Number(process.env.PORT);
+
+  // wenn der port keinen Wert hat wird im number 8100 zugewiesen.
   if (!port)
     port = 8100;
 
-  let server: Http.Server = Http.createServer();
-  server.addListener("request", handleRequest);
+    // Instanz "server" wird erstellt, dann wird ein Server erstellt
+  let server: Http.Server = Http.createServer();  
+  server.addListener("request", handleRequest);   
   server.addListener("listening", handleListen);
   server.listen(port);
+//Server soll port abhören
 
   function handleListen(): void {
-    console.log("Listening");
+    console.log("Listening"); // in Konsole wird "Listening" ausgegeben wenn der addListener ausgeführt wird
   }
 
   function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
-    console.log("I hear voices!");
+    console.log("I hear voices!");  // in Konsole wird "i hear voices" ausgegeben wenn der addListener ausgeführt wird
+
+//response parameter
 
     _response.setHeader("content-type", "text/html; charset=utf-8");
     _response.setHeader("Access-Control-Allow-Origin", "*");
 
-    _response.write(_request.url);
+    _response.write(_request.url);  //response wird geschrieben
 
-    _response.end();
+    _response.end(); //ende von response
   }
 }
