@@ -18,7 +18,7 @@ async function submitVerarbeiten(): Promise<void> {
     
     let response: Response = await fetch(url, { method: "get" });
     let answer: string = await response.text();
-    answer = answer.replace("https://gismaximilianmuenchinger.herokuapp.com/", "");
+    
     console.log(answer);
     
 

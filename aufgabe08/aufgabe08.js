@@ -11,7 +11,6 @@ async function submitVerarbeiten() {
     url += "?" + query.toString();
     let response = await fetch(url, { method: "get" });
     let answer = await response.text();
-    answer = answer.replace("https://gismaximilianmuenchinger.herokuapp.com/", "");
     console.log(answer);
 }
 //# sourceMappingURL=aufgabe08.js.map
