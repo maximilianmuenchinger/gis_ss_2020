@@ -16,7 +16,7 @@ async function submitVerarbeiten(): Promise<void> {
     let query: URLSearchParams = new URLSearchParams(<any>formData);
     url += "?" + query.toString();
     
-    let response: Response = await fetch(url, { method: "get" });
+    let response: Response = await fetch(url);
     let answer: string = await response.text();
     
     console.log(answer);

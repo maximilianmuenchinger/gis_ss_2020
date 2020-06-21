@@ -9,7 +9,7 @@ async function submitVerarbeiten() {
     let url = "https://gismaximilianmuenchinger.herokuapp.com/";
     let query = new URLSearchParams(formData);
     url += "?" + query.toString();
-    let response = await fetch(url, { method: "get" });
+    let response = await fetch(url);
     let answer = await response.text();
     console.log(answer);
 }
