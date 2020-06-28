@@ -36,11 +36,11 @@ export namespace A08Server {
           _response.write(key + ":" + url.query[key] + "<br/>");
         }
       }
-      //if (url.pathname == "/json") {
+      if (url.pathname == "/json") {
       let jsonString: string = JSON.stringify(url.query);
 
       _response.write(jsonString);
-      // }
+       }
     }
     _response.end();
   }
