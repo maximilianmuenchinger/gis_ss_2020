@@ -38,8 +38,10 @@ export namespace A08Server {
       }
       if (url.pathname == "/json") {
         let jsonString: string = JSON.stringify(url.query);
+        
         _response.write(jsonString);
       }
     }
+    _response.end();
   }
 }

@@ -36,6 +36,7 @@ var A08Server;
                 _response.write(jsonString);
             }
         }
+        _response.end();
     }
 })(A08Server = exports.A08Server || (exports.A08Server = {}));
 //# sourceMappingURL=bsp.js.map
