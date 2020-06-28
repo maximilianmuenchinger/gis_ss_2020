@@ -1,7 +1,7 @@
 import * as Http from "http";
 import * as Url from "url";
 
-export namespace A08Server {
+export namespace A09Server {
 
   console.log("Starting server"); // in Konsole wird "starting server" ausgegeben
   let port: number = Number(process.env.PORT);
@@ -40,6 +40,7 @@ export namespace A08Server {
       let jsonString: string = JSON.stringify(url.query);
 
       _response.write(jsonString);
+      console.log(jsonString);
        }
     }
     _response.end();

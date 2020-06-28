@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A08Server = void 0;
+exports.A09Server = void 0;
 const Http = require("http");
 const Url = require("url");
-var A08Server;
-(function (A08Server) {
+var A09Server;
+(function (A09Server) {
     console.log("Starting server"); // in Konsole wird "starting server" ausgegeben
     let port = Number(process.env.PORT);
     // wenn der port keinen Wert hat wird im number 8100 zugewiesen.
@@ -34,9 +34,10 @@ var A08Server;
             if (url.pathname == "/json") {
                 let jsonString = JSON.stringify(url.query);
                 _response.write(jsonString);
+                console.log(jsonString);
             }
         }
         _response.end();
     }
-})(A08Server = exports.A08Server || (exports.A08Server = {}));
+})(A09Server = exports.A09Server || (exports.A09Server = {}));
 //# sourceMappingURL=bsp.js.map
