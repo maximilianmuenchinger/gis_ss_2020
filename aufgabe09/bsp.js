@@ -31,10 +31,10 @@ var A08Server;
                     _response.write(key + ":" + url.query[key] + "<br/>");
                 }
             }
-            if (url.pathname == "/json") {
-                let jsonString = JSON.stringify(url.query);
-                _response.write(jsonString);
-            }
+            //if (url.pathname == "/json") {
+            let jsonString = JSON.stringify(url.query);
+            _response.write(jsonString);
+            // }
         }
         _response.end();
     }
