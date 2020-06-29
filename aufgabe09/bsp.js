@@ -21,7 +21,7 @@ var A09Server;
     }
     function handleRequest(_request, _response) {
         console.log("I hear voices!"); // in Konsole wird "i hear voices" ausgegeben wenn der addListener ausgeführt wird
-        console.log("test123");
+        console.log("test1234");
         //response parameter
         _response.setHeader("content-type", "text/html; charset=utf-8");
         _response.setHeader("Access-Control-Allow-Origin", "*");

@@ -23,7 +23,7 @@ export namespace A09Server {
 
   function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
     console.log("I hear voices!");  // in Konsole wird "i hear voices" ausgegeben wenn der addListener ausgeführt wird
-    console.log("test123");
+    console.log("test1234");
     //response parameter
 
     _response.setHeader("content-type", "text/html; charset=utf-8");
