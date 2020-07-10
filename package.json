@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@types/mongodb": "^3.5.25",
+    "mongodb": "^3.5.9"
+  },
   "devDependencies": {},
   "scripts": {
-    "start": "node aufgabe09/bsp.js"
+    "start": "node aufgabe11/server.js remote"
   },
   "repository": {
     "type": "git",
