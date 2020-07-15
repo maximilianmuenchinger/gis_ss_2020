@@ -58,9 +58,9 @@ export namespace A11Server {
                     orders.insertOne(url.query);
                 }
             }
-            else {
-                _response.write(JSON.stringify(await orders.find().toArray()));
-            }
+           // else {
+               // _response.write(JSON.stringify(await orders.find().toArray()));
+           // }
         }
         _response.end();
     }
