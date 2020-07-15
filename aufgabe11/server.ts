@@ -13,9 +13,12 @@ export namespace A11Server {
         port = 8100;
 
 
-    let databaseUrl: string = "mongodb+srv://User1:<password>@maxscluster.juvc9.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    let databaseUrl: string = "mongodb+srv://User1:F8bHZC2XgkJ9Pekl@maxscluster.juvc9.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    
     startServer(port);
     connectToDatabse(databaseUrl);
+
+
     function startServer(_port: number | string): void {
 
         console.log("Starting server"); // in Konsole wird "starting server" ausgegeben
@@ -53,14 +56,13 @@ export namespace A11Server {
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
             if (url.pathname == "/html") {
-                for (let key in url.query) {
-                    _response.write(key + ":" + url.query[key] + "<br/>");
+               
                     orders.insertOne(url.query);
-                }
+                
             }
-           // else {
-               // _response.write(JSON.stringify(await orders.find().toArray()));
-           // }
+           else {
+                _response.write(JSON.stringify(await orders.find().toArray()));
+           }
         }
         _response.end();
     }

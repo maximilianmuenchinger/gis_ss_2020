@@ -11,7 +11,7 @@ var A11Server;
     // wenn der port keinen Wert hat wird im number 8100 zugewiesen.
     if (!port)
         port = 8100;
-    let databaseUrl = "mongodb+srv://User1:<password>@maxscluster.juvc9.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    let databaseUrl = "mongodb+srv://User1:F8bHZC2XgkJ9Pekl@maxscluster.juvc9.mongodb.net/<dbname>?retryWrites=true&w=majority";
     startServer(port);
     connectToDatabse(databaseUrl);
     function startServer(_port) {
@@ -42,14 +42,11 @@ var A11Server;
         if (_request.url) {
             let url = Url.parse(_request.url, true);
             if (url.pathname == "/html") {
-                for (let key in url.query) {
-                    _response.write(key + ":" + url.query[key] + "<br/>");
-                    orders.insertOne(url.query);
-                }
+                orders.insertOne(url.query);
             }
-            // else {
-            // _response.write(JSON.stringify(await orders.find().toArray()));
-            // }
+            else {
+                _response.write(JSON.stringify(await orders.find().toArray()));
+            }
         }
         _response.end();
     }
