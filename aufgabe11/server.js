@@ -27,7 +27,7 @@ var A11Server;
         let options = { useNewUrlParser: true, useUnifiedTopology: true };
         let mongoClient = new Mongo.MongoClient(_url, options);
         await mongoClient.connect();
-        orders = mongoClient.db("Test").collection("Students");
+        orders = mongoClient.db("Eisdiele_West").collection("Bestellungen");
         console.log("Database connection", orders != undefined);
     }
     function handleListen() {
@@ -41,7 +41,7 @@ var A11Server;
         _response.setHeader("Access-Control-Allow-Origin", "*");
         if (_request.url) {
             let url = Url.parse(_request.url, true);
-            if (url.pathname == "/html") {
+            if (url.pathname == "/senden") {
                 orders.insertOne(url.query);
             }
             else {

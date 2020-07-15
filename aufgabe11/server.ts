@@ -35,7 +35,7 @@ export namespace A11Server {
         let options: Mongo.MongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
         let mongoClient: Mongo.MongoClient = new Mongo.MongoClient(_url, options);
         await mongoClient.connect();
-        orders = mongoClient.db("Test").collection("Students");
+        orders = mongoClient.db("Eisdiele_West").collection("Bestellungen");
         console.log("Database connection", orders != undefined);
     }
 
@@ -55,7 +55,7 @@ export namespace A11Server {
 
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
-            if (url.pathname == "/html") {
+            if (url.pathname == "/senden") {
                
                     orders.insertOne(url.query);
                 
