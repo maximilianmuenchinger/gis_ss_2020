@@ -14,7 +14,7 @@ export namespace A11Server {
 
 
     let databaseUrl: string = "mongodb+srv://User1:F8bHZC2XgkJ9Pekl@maxscluster.juvc9.mongodb.net/<dbname>?retryWrites=true&w=majority";
-    
+
     startServer(port);
     connectToDatabse(databaseUrl);
 
@@ -56,14 +56,18 @@ export namespace A11Server {
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
             if (url.pathname == "/senden") {
-               
-                    orders.insertOne(url.query);
-                
+
+                orders.insertOne(url.query);
+
             }
-           else {
+            else {
                 _response.write(JSON.stringify(await orders.find().toArray()));
-           }
+            }
+            if (url.pathname == "/empty") {
+                orders.remove({});
+            }
         }
+
         _response.end();
     }
 }

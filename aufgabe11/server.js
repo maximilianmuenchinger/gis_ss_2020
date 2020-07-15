@@ -47,6 +47,9 @@ var A11Server;
             else {
                 _response.write(JSON.stringify(await orders.find().toArray()));
             }
+            if (url.pathname == "/empty") {
+                orders.remove({});
+            }
         }
         _response.end();
     }
