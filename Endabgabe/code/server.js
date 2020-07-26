@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A11Server = void 0;
+exports.Endabgabe = void 0;
 const Http = require("http");
 const Url = require("url");
 const Mongo = require("mongodb");
-var A11Server;
-(function (A11Server) {
+var Endabgabe;
+(function (Endabgabe) {
     let orders;
     let port = Number(process.env.PORT);
     if (!port)
@@ -41,7 +41,7 @@ var A11Server;
                 orders.insertOne(url.query);
             }
             else {
-                _response.write(JSON.stringify(await orders.find().toArray()));
+                _response.write(orders);
             }
             if (url.pathname == "/empty") {
                 orders.remove({});
@@ -49,5 +49,5 @@ var A11Server;
         }
         _response.end();
     }
-})(A11Server = exports.A11Server || (exports.A11Server = {}));
+})(Endabgabe = exports.Endabgabe || (exports.Endabgabe = {}));
 //# sourceMappingURL=server.js.map
