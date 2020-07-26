@@ -12,6 +12,5 @@ async function allesLaden(_url) {
     alleEisSorten = await response.json();
     artikelHinzufügen1();
 }
-
 let zahlGlobal;
 //# sourceMappingURL=data.js.map
