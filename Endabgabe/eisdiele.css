@@ -9,6 +9,10 @@ color: rgb(33, 151, 224);
 h2{text-align: center;
 color: orange;
 }
+#h2{
+padding-bottom: 50px;
+}
+
 h3{text-align: center;}
 h4{text-align: center;}
 
