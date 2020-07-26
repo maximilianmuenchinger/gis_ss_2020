@@ -40,6 +40,9 @@ var A11Server;
             if (url.pathname == "/senden") {
                 orders.insertOne(url.query);
             }
+            else {
+                _response.write(JSON.stringify(await orders.find().toArray()));
+            }
             if (url.pathname == "/empty") {
                 orders.remove({});
             }
