@@ -18,6 +18,7 @@ function eisHinzufügen() {
                 div3.setAttribute("style", "display: none");
                 break;
         }
+        
         let name1 = document.createElement("h3");
         name1.innerHTML = alleEisSorten[index].name;
         divcontainer.appendChild(name1);

@@ -5,6 +5,7 @@ async function empfangen1() {
     let response2 = await fetch(url);
     let answer = await response2.text();
     let split = answer.split("},");
+    
     for (let index = 0; index < split.length; index++) {
         let divcontainer = document.createElement("div");
         document.getElementById("text")?.appendChild(divcontainer);

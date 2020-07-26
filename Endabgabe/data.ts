@@ -10,6 +10,8 @@ eisLaden("data.json");
 allesLaden("data.json");
 
 
+
+
 async function eisLaden(_url: RequestInfo): Promise<void> {
     let response: Response = await fetch(_url);
     alleEisSorten = await response.json();

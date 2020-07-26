@@ -6,6 +6,7 @@ let gesamtPreis = localStorage.getItem("gesamtpreis");
 //variablen für getBestellung
 let bestellung = "";
 let getBestellung;
+
 function artikelHinzufügen1() {
     for (let index = 0; index < splitResult.length; index++) {
         let indexZahl = splitResult[index];
