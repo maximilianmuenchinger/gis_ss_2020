@@ -37,12 +37,11 @@ var Endabgabe;
         _response.setHeader("Access-Control-Allow-Origin", "*");
         if (_request.url) {
             let url = Url.parse(_request.url, true);
-            let order = JSON.stringify(url.query);
             if (url.pathname == "/senden") {
                 orders.insertOne(url.query);
             }
             else {
-                _response.write(order);
+                _response.write(JSON.stringify(await orders.find().toArray()));
             }
             if (url.pathname == "/empty") {
                 orders.remove({});
