@@ -5,7 +5,6 @@ async function empfangen1() {
     let response2 = await fetch(url);
     let answer = await response2.text();
     let split = answer.split("},");
-    
     for (let index = 0; index < split.length; index++) {
         let divcontainer = document.createElement("div");
         document.getElementById("text")?.appendChild(divcontainer);
@@ -21,7 +20,7 @@ async function empfangen1() {
         divcontainer.appendChild(button);
         let bild;
         bild = document.createElement("img");
-        bild.setAttribute("src", "/Endabgabe/Bilder/icons8-häkchen-96.png");
+        bild.setAttribute("src", "Bilder/icons8-häkchen-96.png");
         bild.setAttribute("id", "bild" + index.toString()); //bild+Index damit für ids
         bild.setAttribute("alt", "Haken");
         divcontainer.appendChild(bild);

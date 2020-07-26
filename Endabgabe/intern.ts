@@ -31,7 +31,7 @@ async function empfangen1(): Promise<void> { //zum empfangen der Daten in Datenb
 
         let bild: HTMLImageElement;
         bild = document.createElement("img");
-        bild.setAttribute("src", "/Endabgabe/Bilder/icons8-häkchen-96.png");
+        bild.setAttribute("src", "Bilder/icons8-häkchen-96.png");
         bild.setAttribute("id", "bild" + index.toString()); //bild+Index damit für ids
         bild.setAttribute("alt", "Haken");
         divcontainer.appendChild(bild);
