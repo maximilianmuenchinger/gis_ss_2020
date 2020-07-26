@@ -41,7 +41,7 @@ var Endabgabe;
                 orders.insertOne(url.query);
             }
             else {
-                _response.write(orders);
+                _response.write(JSON.stringify(await orders.find().toArray()));
             }
             if (url.pathname == "/empty") {
                 orders.remove({});
