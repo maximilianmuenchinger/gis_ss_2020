@@ -7,86 +7,86 @@
     "kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/schoko.png",
+    "img": "Bilder/schoko.png",
     "name": "Schokoladeneis",
     "preis": 1.30
     ,"kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/Zitrone.png",
+    "img": "Bilder/Zitrone.png",
     "name": "Zitroneneis",
     "preis": 1.30
     ,"kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/caramel.png",
+    "img": "Bilder/caramel.png",
     "name": "Karameleis",
     "preis": 1.30
     ,"kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/Haselnuss.png",
+    "img": "Bilder/Haselnuss.png",
     "name": "Haselnusseis",
     "preis": 1.30
     ,"kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/Cookie.png",
+    "img": "Bilder/Cookie.png",
     "name": "Cookieeis",
     "preis": 1.30
     ,"kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/Mango.png",
+    "img": "Bilder/Mango.png",
     "name": "Mangoeis",
     "preis": 1.30
     ,"kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/Orio.png",
+    "img": "Bilder/Orio.png",
     "name": "Oreoeis",
     "preis": 1.30
     ,"kategorie": 1
 },
 {
-    "img": "/Endabgabe/Bilder/Stracciatella.png",
+    "img": "Bilder/Stracciatella.png",
     "name": "Stracciatellaeis",
     "preis": 1.30
     ,"kategorie": 1
 }
 
-,{"img":"/Endabgabe/Bilder/becher.png",
+,{"img":"Bilder/becher.png",
     "name":"Becher",
     "preis":0
     ,"kategorie": 2
 
 },
 {
-    "img": "/Endabgabe/Bilder/waffel.png",
+    "img": "Bilder/waffel.png",
     "name": "Waffel",
     "preis": 0
     ,"kategorie": 2
 },
 {
-    "img": "/Endabgabe/Bilder/Haselnuss streusel.png",
+    "img": "Bilder/Haselnuss streusel.png",
     "name": "Haselnuss Streusel",
     "preis": 1
     ,"kategorie": 3
 },
 {
-    "img": "/Endabgabe/Bilder/smarties.jpg",
+    "img": "Bilder/smarties.jpg",
     "name": "Smarties",
     "preis": 0.5
     ,"kategorie": 3
 },
 {
-    "img": "/Endabgabe/Bilder/schokosauce.jpg",
+    "img": "Bilder/schokosauce.jpg",
     "name": "Schokosauce",
     "preis": 1
     ,"kategorie": 3
 },
 {
-    "img": "/Endabgabe/Bilder/Zuckerstreusel-bunt.jpg",
+    "img": "Bilder/Zuckerstreusel-bunt.jpg",
     "name": "Zuckerstreusel",
     "preis": 0.5
     ,"kategorie": 3
