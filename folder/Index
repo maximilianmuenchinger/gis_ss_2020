@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js"></script>
+    <title>RitterSport</title>
+</head>
+
+<body>
+    <div id="header">
+    <img src="logo-ritter-sport-01.png" alt="Logo">
+    <h1>Quadratisch. Praktisch. Gut.</h1>
+</div>
+    
+
+<video data-aos="fade-in"  id="Video" autoplay muted src="WürfelNeuSchatten.mov"></video> 
+    
+
+
+    
+<!--1-->
+        <div data-aos="fade-in" id="eins">
+            <div id="quadrat">
+            <p class="Text">Unsere neueste 
+                Schokoladenspezialität.
+                Sechs unserer klassischen 
+                Quadrate und einen Kern aus 
+                Schokolade ergeben den 
+                neuen Schokoladen Zauberwürfel. 
+                Somit bekommst du unsere 
+                köstliche 
+                Edel Vollmilch Schokolade 
+                in einem 
+                neuen und spannendem Design.</p>
+</div>
+<div data-aos="fade-in" id="quadrat2"> 
+    <video id="Video2" data-aos="fade-in" data-aos-anchor-placement="center-bottom" data-aos-id="Video2" preload="auto" src="0001-0100.mp4"></video> 
+</div>
+        </div>
+
+
+        <!--2-->
+        <div data-aos="fade-in"id="zwei">
+            <div id="quadrat2links">
+            <p class="Text">Für unsere Schokolade
+                werden nur die besten 
+                Kakao-Bohnen aus Peru
+                benutzt. Durch ihren edlen,
+                kakaoigen und leicht nussigen
+                Geschmack sind die 
+                Bohnen der Start zu 
+                unserer exquisiten Schokolade.</p>
+</div>
+<div data-aos="fade-in" id="quadrat2rechts"> 
+                <img src="Quadratische Bilder/Bohnen.png" alt="">
+</div>
+        </div>
+        
+
+
+
+
+        
+
+
+
+<!--3-->
+   <div data-aos="fade-in" id="drei">
+    <div id="quadrat3links">
+    <p class="Text">Unser Zauberwürfel wird aus 
+        unserer Edel Vollmilchschokolade
+        hergestellt. Wie der Name 
+        schon sagt, kannst du einen
+        edlen Schokoladengeschmack
+        mit Noten von feiner
+         Vollmilch erwarten.</p>
+</div>
+<div data-aos="fade-in" id="quadrat3rechts"> 
+        <img src="Quadratische Bilder/Schokolade.png" alt="">
+</div>
+</div>
+
+
+
+ <!--4-->
+ <div data-aos="fade-in" id="vier">
+    <div id="quadrat4links">
+    <p class="Text">Der Geschmack unsere 
+        Vollmilchschokolade
+        ist vor allem durch den 
+        Gebrauch von bester 
+        Alpenmilch so einzigartig.</p>
+</div>
+<div data-aos="fade-in" id="quadrat4rechts"> 
+        <img src="Quadratische Bilder/Milch.png" alt="">
+</div>
+</div>
+
+
+
+<!--5-->
+<div data-aos="fade-in" id="funf">
+    <div id="quadrat5links">
+    <p class="Text"> <b>Schokozauberwürfel </b> </p>
+    <button >Jetzt kaufen!</button>
+</div>
+<div data-aos="fade-in" id="quadrat5rechts"> 
+        <img src="Quadratische Bilder/Verpackung.png" alt="">
+</div>
+</div>
+
+
+
+
+
+
+
+<!--unten-->
+<div id="quadrate">
+
+
+<img src="beleg.png" alt="">
+</div>
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
