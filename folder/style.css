@@ -1,0 +1,554 @@
+#header{
+    text-align: center;
+}
+#header img{
+    
+    float: left;
+    width: 70px;
+    
+
+}
+#header h1{
+    
+    display: inline-block;
+    font-family: "Avenir";
+    
+    
+}
+
+video{
+    width: 100%;
+   
+    
+}
+
+#Video{
+  width: 100%;
+  height: 91vh;
+  object-fit: cover;
+}
+
+#quadrate img{
+    width: 100%;
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  .container .btn {
+      font-family: "Avenir";
+      width: 25%;
+      height: 15%;
+    position: absolute;
+    top: 61%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: rgb(176, 39,81);
+    font-size: 40px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+#eins{
+    width: 100%;
+    height: 50vw;
+}
+  #quadrat{
+    
+      
+width: 50%;
+height: 50vw;
+
+background-color: rgb(125, 132,50);
+float: left;
+
+
+  }
+  #quadrat2{
+    
+      
+    width: 50%;
+    height: 50vw;
+    float: right;
+    background-color: rgb(229, 229,229);
+  }
+  #quadrat2 video{
+    
+     
+    width: 100%;
+    
+    
+  }
+
+  #quadrat p{
+      font-family: "Avenir";
+      
+      text-align: center;
+      color: white;
+      
+      padding-left: 10%;
+      padding-right: 10%;
+      
+      position: relative;
+      top: 45%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
+  }
+
+
+
+
+
+
+
+  #zwei{
+    width: 100%;
+    height: 50vw;
+}
+  #quadrat2links{
+    
+      
+width: 50%;
+height: 50vw;
+
+background-color: rgb(206, 140, 108);
+float: right;
+
+
+  }
+  #quadrat2rechts{
+    
+      
+    width: 50%;
+    height: 50vw;
+    float: left;
+    
+  }
+  #quadrat2rechts img{
+    width: 100%;
+    
+    
+     
+     
+    
+  }
+
+  #quadrat2links p{
+      font-family: "Avenir";
+      
+      text-align: center;
+      color: white;
+      
+      padding-left: 10%;
+      padding-right: 10%;
+      
+      position: relative;
+      top: 45%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
+  }
+
+
+
+
+
+
+
+  #drei{
+    width: 100%;
+    height: 50vw;
+}
+  #quadrat3links{
+    
+      
+width: 50%;
+height: 50vw;
+
+background-color: rgb(42, 99,165);
+float: left;
+
+
+  }
+  #quadrat3rechts{
+    
+      
+    width: 50%;
+    height: 50vw;
+    float: right;
+    
+  }
+  #quadrat3rechts img{
+    width: 100%;
+    
+    
+    
+   
+     
+     
+    
+  }
+
+  #quadrat3links p{
+      font-family: "Avenir";
+      
+      text-align: center;
+      color: white;
+      
+      padding-left: 10%;
+      padding-right: 10%;
+      
+      position: relative;
+      top: 45%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
+  }
+  
+
+
+
+
+
+
+  #vier{
+    width: 100%;
+    height: 50vw;
+}
+  #quadrat4links{
+    
+      
+width: 50%;
+height: 50vw;
+
+background-color: rgb(98, 53, 39);
+float: right;
+
+
+  }
+  #quadrat4rechts{
+    
+      
+    width: 50%;
+    height: 50vw;
+    float: left;
+    
+  }
+  #quadrat4rechts img{
+    width: 100%;
+    
+   
+   
+     
+     
+    
+  }
+
+  #quadrat4links p{
+      font-family: "Avenir";
+      
+      text-align: center;
+      color: white;
+      
+      padding-left: 10%;
+      padding-right: 10%;
+      
+      position: relative;
+      top: 45%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
+  }
+
+
+
+
+
+
+
+  #funf{
+    width: 100%;
+    height: 50vw;
+}
+  #quadrat5links{
+    
+      
+width: 50%;
+height: 50vw;
+
+background-color: rgb(176, 39,81);
+float: left;
+
+
+  }
+  #quadrat5rechts{
+    
+      
+    width: 50%;
+    height: 50vw;
+    float: right;
+    
+  }
+  #quadrat5rechts img{
+    width: 100%;
+    
+    
+   
+   
+     
+     
+    
+  }
+
+  #quadrat5links p{
+      font-family: "Avenir";
+      
+      text-align: center;
+      color: white;
+      
+      padding-left: 10%;
+      padding-right: 10%;
+      
+      position: relative;
+      top: 40%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
+  }
+
+  #funf button {
+    font-family: "Avenir";
+    
+    width: 40%;
+    height: 15%;
+  
+  
+  transform: translate(75%, 220%);
+  
+  background-color: white;
+  color: rgb(176, 39,81);
+  font-size: 300%;
+  
+  border: none;
+  cursor: pointer;
+  
+}
+
+.Text{
+  font-size: 300%;
+}
+
+
+@media screen and (max-width: 1700px){
+  .Text{
+    font-size: 250%;
+  }
+
+  #funf button {
+    font-size: 250%;
+  }
+
+}
+
+@media screen and (max-width: 1400px){
+  .Text{
+    font-size: 200%;
+  }
+
+  #funf button {
+    font-size: 200%;
+  }
+
+  h1{
+    font-size: 150%;
+  }
+
+}
+
+@media screen and (max-width: 1150px){
+  .Text{
+    font-size: 150%;
+  }
+
+  #funf button {
+    font-size: 150%;
+  }
+  #header img{
+    
+    
+    width: 50px;
+    
+
+}
+#Video{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+}
+
+@media screen and (max-width: 850px){
+  .Text{
+    font-size: 100%;
+  }
+
+  #funf button {
+    font-size: 100%;
+  }
+
+  h1{
+    font-size: 100%;
+  }
+  #header img{
+    
+    
+    width: 40px;
+    
+
+}
+
+#Video{
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+}
+}
+@media screen and (max-width: 550px){
+#quadrat{
+    
+      
+  width: 100%;
+  height: 100vw;
+  
+  
+  
+  
+    }
+    #quadrat2{ 
+      width: 100%;
+      height: 100vw;
+    }
+
+    #quadrat2links{
+    
+      
+      width: 100%;
+      height: 100vw;
+      
+      
+      
+      
+        }
+        #quadrat2rechts{ 
+          width: 100%;
+          height: 100vw;
+        }
+        #quadrat3links{
+    
+      
+          width: 100%;
+          height: 100vw;
+          
+          
+          
+          
+            }
+            #quadrat3rechts{ 
+              width: 100%;
+              height: 100vw;
+            }
+            #quadrat4links{
+    
+      
+              width: 100%;
+              height: 100vw;
+              
+              
+              
+              
+                }
+                #quadrat4rechts{ 
+                  width: 100%;
+                  height: 100vw;
+                }
+                #quadrat5links{
+    
+      
+                  width: 100%;
+                  height: 100vw;
+                  
+                  
+                  
+                  
+                    }
+                    #quadrat5rechts{ 
+                      width: 100%;
+                      height: 100vw;
+                    }
+
+                    #funf button {
+                      font-size: 170%;
+                    }
+  .Text{
+    font-size: 170%;
+  }
+  #Video{
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .Text{
+    font-size: 130%;
+  }
+  h1{
+    font-size: 70%;
+  }
+  #header img{
+    
+    
+    width: 30px;
+}
+#funf button {
+  font-size: 120%;
+}
+#Video{
+  width: 100%;
+  height: 37vh;
+  object-fit: cover;
+}
+}
+
+@media screen and (max-width: 350px){
+  .Text{
+    font-size: 100%;
+  }
+  #funf button {
+    font-size: 100%;
+  }
+  #Video{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+}
+
